@@ -29,7 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                     if ($password === $dbPassword) {
                         $_SESSION['username'] = $username;
-                        $_SESSION['user_id'] = $id;
                         header("Location: index.php");
                         exit();
                     } else {
